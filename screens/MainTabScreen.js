@@ -39,7 +39,7 @@ const MainTabScreen = () => (
       }}
     />
     <Tab.Screen
-      name="Notifications"
+      name="Notificaciones"
       component={NotificationStackScreen}
       options={{
         tabBarLabel: 'Updates',
@@ -133,15 +133,15 @@ const HomeStackScreen = ({navigation}) => {
           ),
         }}
       />
-      <HomeStack.Screen 
+      <HomeStack.Screen
         name="CardListScreen"
         component={CardListScreen}
         options={({route}) => ({
           title: route.params.title,
-          headerBackTitleVisible: false
+          headerBackTitleVisible: false,
         })}
       />
-      <HomeStack.Screen 
+      <HomeStack.Screen
         name="CardItemDetails"
         component={CardItemDetails}
         options={({route}) => ({
@@ -149,7 +149,7 @@ const HomeStackScreen = ({navigation}) => {
           headerBackTitleVisible: false,
           headerTitle: false,
           headerTransparent: true,
-          headerTintColor: '#fff'
+          headerTintColor: '#fff',
         })}
       />
     </HomeStack.Navigator>

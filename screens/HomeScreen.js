@@ -57,17 +57,17 @@ const HomeScreen = ({navigation}) => {
         <TouchableOpacity
           style={styles.categoryBtn}
           onPress={() =>
-            navigation.navigate('CardListScreen', {title: 'Restaurant'})
+            navigation.navigate('CardListScreen', {title: 'Restaurante'})
           }>
           <View style={styles.categoryIcon}>
             <Ionicons name="ios-restaurant" size={35} color="#FF6347" />
           </View>
-          <Text style={styles.categoryBtnTxt}>Restaurant</Text>
+          <Text style={styles.categoryBtnTxt}>Restaurante</Text>
         </TouchableOpacity>
         <TouchableOpacity
           style={styles.categoryBtn}
           onPress={() =>
-            navigation.navigate('CardListScreen', {title: 'Fastfood Center'})
+            navigation.navigate('CardListScreen', {title: 'Comida Buena'})
           }>
           <View style={styles.categoryIcon}>
             <MaterialCommunityIcons
@@ -76,13 +76,13 @@ const HomeScreen = ({navigation}) => {
               color="#FF6347"
             />
           </View>
-          <Text style={styles.categoryBtnTxt}>Fastfood Center</Text>
+          <Text style={styles.categoryBtnTxt}>Comida Rapida</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.categoryBtn} onPress={() => {}}>
           <View style={styles.categoryIcon}>
             <MaterialCommunityIcons name="food" size={35} color="#FF6347" />
           </View>
-          <Text style={styles.categoryBtnTxt}>Snacks Corner</Text>
+          <Text style={styles.categoryBtnTxt}>Mas comida</Text>
         </TouchableOpacity>
       </View>
       <View style={[styles.categoryContainer, {marginTop: 10}]}>
@@ -90,19 +90,19 @@ const HomeScreen = ({navigation}) => {
           <View style={styles.categoryIcon}>
             <Fontisto name="hotel" size={35} color="#FF6347" />
           </View>
-          <Text style={styles.categoryBtnTxt}>Hotels</Text>
+          <Text style={styles.categoryBtnTxt}>Hoteles</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.categoryBtn} onPress={() => {}}>
           <View style={styles.categoryIcon}>
             <Ionicons name="md-restaurant" size={35} color="#FF6347" />
           </View>
-          <Text style={styles.categoryBtnTxt}>Dineouts</Text>
+          <Text style={styles.categoryBtnTxt}>Cenar Fuera</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.categoryBtn} onPress={() => {}}>
           <View style={styles.categoryIcon}>
             <MaterialIcons name="expand-more" size={35} color="#FF6347" />
           </View>
-          <Text style={styles.categoryBtnTxt}>Show More</Text>
+          <Text style={styles.categoryBtnTxt}>Mas</Text>
         </TouchableOpacity>
       </View>
 
@@ -114,7 +114,7 @@ const HomeScreen = ({navigation}) => {
             fontWeight: 'bold',
             color: '#333',
           }}>
-          Recently Viewed
+          Recientes
         </Text>
         <View style={styles.card}>
           <View style={styles.cardImgWrapper}>
@@ -125,11 +125,9 @@ const HomeScreen = ({navigation}) => {
             />
           </View>
           <View style={styles.cardInfo}>
-            <Text style={styles.cardTitle}>Amazing Food Place</Text>
+            <Text style={styles.cardTitle}>Restaurante 1</Text>
             <StarRating ratings={4} reviews={99} />
-            <Text style={styles.cardDetails}>
-              Amazing description for this amazing place
-            </Text>
+            <Text style={styles.cardDetails}>Descripcion</Text>
           </View>
         </View>
         <View style={styles.card}>
@@ -141,11 +139,9 @@ const HomeScreen = ({navigation}) => {
             />
           </View>
           <View style={styles.cardInfo}>
-            <Text style={styles.cardTitle}>Amazing Food Place</Text>
+            <Text style={styles.cardTitle}>Restaurante 2</Text>
             <StarRating ratings={4} reviews={99} />
-            <Text style={styles.cardDetails}>
-              Amazing description for this amazing place
-            </Text>
+            <Text style={styles.cardDetails}>Descripcion de restaurante</Text>
           </View>
         </View>
         <View style={styles.card}>
@@ -157,10 +153,10 @@ const HomeScreen = ({navigation}) => {
             />
           </View>
           <View style={styles.cardInfo}>
-            <Text style={styles.cardTitle}>Amazing Food Place</Text>
+            <Text style={styles.cardTitle}>Buen Restaurante</Text>
             <StarRating ratings={4} reviews={99} />
             <Text style={styles.cardDetails}>
-              Amazing description for this amazing place
+              Este es un buen lugar para comer
             </Text>
           </View>
         </View>
