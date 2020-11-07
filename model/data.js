@@ -10,14 +10,15 @@ export const data = [
   {
     id: '1',
     coordinate: {
-      latitude: 22.6293867,
-      longitude: 88.4354486,
+      latitude: 24.0313942,
+      longitude: -104.6649105,
     },
-    title: 'Amazing Food Place',
+    title: 'comida buena',
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque est metus, gravida vel ex volutpat, posuere euismod tortor. Pellentesque tincidunt, mi ac varius blandit, quam orci dignissim risus, vitae rutrum orci urna ut neque.
       
       Pellentesque condimentum ut libero id blandit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.`,
-    image: Images[0].image,
+    image:
+      'https://image.freepik.com/free-photo/image-human-brain_99433-298.jpg',
     rating: 4,
     reviews: 99,
     categories: ['Restaurant', 'Hotel', 'Dineout'],
@@ -28,11 +29,12 @@ export const data = [
       latitude: 22.6345648,
       longitude: 88.4377279,
     },
-    title: 'Second Amazing Food Place',
+    title: 'Comida buena 2',
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque est metus, gravida vel ex volutpat, posuere euismod tortor. Pellentesque tincidunt, mi ac varius blandit, quam orci dignissim risus, vitae rutrum orci urna ut neque.
       
       Pellentesque condimentum ut libero id blandit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.`,
-    image: Images[1].image,
+    image:
+      'https://image.freepik.com/free-photo/image-human-brain_99433-298.jpg',
     rating: 5,
     reviews: 102,
     categories: ['Restaurant', 'Fastfood Center', 'Snacks Corner'],
@@ -43,7 +45,7 @@ export const data = [
       latitude: 22.6281662,
       longitude: 88.4410113,
     },
-    title: 'Third Amazing Food Place',
+    title: 'Comida buena 3',
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque est metus, gravida vel ex volutpat, posuere euismod tortor. Pellentesque tincidunt, mi ac varius blandit, quam orci dignissim risus, vitae rutrum orci urna ut neque.
       
       Pellentesque condimentum ut libero id blandit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.`,
@@ -58,7 +60,7 @@ export const data = [
       latitude: 22.6341137,
       longitude: 88.4497463,
     },
-    title: 'Fourth Amazing Food Place',
+    title: 'Comida buena 4',
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque est metus, gravida vel ex volutpat, posuere euismod tortor. Pellentesque tincidunt, mi ac varius blandit, quam orci dignissim risus, vitae rutrum orci urna ut neque.
       
       Pellentesque condimentum ut libero id blandit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.`,
@@ -73,7 +75,7 @@ export const data = [
       latitude: 22.6292757,
       longitude: 88.444781,
     },
-    title: 'Fifth Amazing Food Place',
+    title: 'Muy buena comida',
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque est metus, gravida vel ex volutpat, posuere euismod tortor. Pellentesque tincidunt, mi ac varius blandit, quam orci dignissim risus, vitae rutrum orci urna ut neque.
       
       Pellentesque condimentum ut libero id blandit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.`,

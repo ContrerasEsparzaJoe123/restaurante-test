@@ -32,7 +32,7 @@ const CardItemDetails = ({route}) => {
         maxOverlayOpacity={0.6}
         minOverlayOpacity={0.3}
         renderHeader={() => (
-          <Image source={itemData.image} style={styles.image} />
+          <Image source={{uri: `${itemData.image}`}} style={styles.image} />
         )}
         renderForeground={() => (
           <View style={styles.titleContainer}>
