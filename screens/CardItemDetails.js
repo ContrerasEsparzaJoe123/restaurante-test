@@ -13,7 +13,7 @@ import HeaderImageScrollView, {
 } from 'react-native-image-header-scroll-view';
 
 import * as Animatable from 'react-native-animatable';
-import MapView, {PROVIDER_GOOGLE} from 'react-native-maps';
+import MapView, {PROVIDER_GOOGLE, Marker} from 'react-native-maps';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 
 const MIN_HEIGHT = Platform.OS === 'ios' ? 90 : 55;
@@ -22,7 +22,6 @@ const MAX_HEIGHT = 350;
 const CardItemDetails = ({route}) => {
   const itemData = route.params.itemData;
   const navTitleView = useRef(null);
-
   return (
     <View style={styles.container}>
       <StatusBar barStyle="light-content" />
@@ -32,16 +31,16 @@ const CardItemDetails = ({route}) => {
         maxOverlayOpacity={0.6}
         minOverlayOpacity={0.3}
         renderHeader={() => (
-          <Image source={{uri: `${itemData.image}`}} style={styles.image} />
+          <Image source={{uri: `${itemData.imagen}`}} style={styles.image} />
         )}
         renderForeground={() => (
           <View style={styles.titleContainer}>
-            <Text style={styles.imageTitle}>{itemData.title}</Text>
+            <Text style={styles.imageTitle}>{itemData.nombre}</Text>
           </View>
         )}
         renderFixedForeground={() => (
           <Animatable.View style={styles.navTitleView} ref={navTitleView}>
-            <Text style={styles.navTitle}>{itemData.title}</Text>
+            <Text style={styles.navTitle}>{itemData.nombre}</Text>
           </Animatable.View>
         )}>
         <TriggeringView
@@ -52,16 +51,16 @@ const CardItemDetails = ({route}) => {
             <Text style={styles.title}>Overview</Text>
             <View style={{flexDirection: 'row', alignItems: 'flex-end'}}>
               <FontAwesome name="star" size={16} color="#FF6347" />
-              <Text style={{marginHorizontal: 2}}>{itemData.rating}</Text>
-              <Text>({itemData.reviews})</Text>
+              <Text style={{marginHorizontal: 2}}>{itemData.calificacion}</Text>
+              <Text>({itemData.direccion})</Text>
             </View>
           </View>
         </TriggeringView>
         <View style={[styles.section, styles.sectionLarge]}>
-          <Text style={styles.sectionContent}>{itemData.description}</Text>
+          <Text style={styles.sectionContent}>{itemData.descripcion}</Text>
         </View>
 
-        <View style={styles.section}>
+        {/* <View style={styles.section}>
           <View style={styles.categories}>
             {itemData.categories.map((category, index) => (
               <View style={styles.categoryContainer} key={index}>
@@ -70,23 +69,23 @@ const CardItemDetails = ({route}) => {
               </View>
             ))}
           </View>
-        </View>
+        </View>*/}
 
         <View style={[styles.section, {height: 250}]}>
           <MapView
             provider={PROVIDER_GOOGLE}
             style={{flex: 1}}
             region={{
-              latitude: itemData.coordinate.latitude,
-              longitude: itemData.coordinate.longitude,
-              latitudeDelta: 0.00864195044303443,
-              longitudeDelta: 0.000142817690068,
-            }}>
-            <MapView.Marker
-              coordinate={itemData.coordinate}
-              image={require('../assets/map_marker.png')}
-            />
-          </MapView>
+              latitude: 24.0277,
+              longitude: -104.653,
+              latitudeDelta: 0.04864195044303443,
+              longitudeDelta: 0.040142817690068,
+            }}
+          />
+          {/*<Marker*/}
+          {/*  coordinate={{latitude: 51.5078788, longitude: -0.0877321}}*/}
+          {/*/>*/}
+          {/*</MapView>*/}
         </View>
       </HeaderImageScrollView>
     </View>

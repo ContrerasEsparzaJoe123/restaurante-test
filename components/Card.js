@@ -9,16 +9,19 @@ const Card = ({itemData, onPress}) => {
       <View style={styles.card}>
         <View style={styles.cardImgWrapper}>
           <Image
-            source={{uri: `${itemData.image}`}}
+            source={{uri: `${itemData.imagen}`}}
             resizeMode="cover"
             style={styles.cardImg}
           />
         </View>
         <View style={styles.cardInfo}>
-          <Text style={styles.cardTitle}>{itemData.title}</Text>
-          <StarRating ratings={itemData.ratings} reviews={itemData.reviews} />
+          <Text style={styles.cardTitle}>{itemData.nombre}</Text>
+          <StarRating
+            ratings={itemData.calificacion}
+            reviews={itemData.calificacion}
+          />
           <Text numberOfLines={2} style={styles.cardDetails}>
-            {itemData.description}
+            {itemData.descripcion}
           </Text>
         </View>
       </View>
