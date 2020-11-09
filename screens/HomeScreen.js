@@ -66,9 +66,7 @@ const HomeScreen = ({navigation}) => {
         </TouchableOpacity>
         <TouchableOpacity
           style={styles.categoryBtn}
-          onPress={() =>
-            navigation.navigate('CardListScreen', {title: 'Comida Buena'})
-          }>
+          onPress={() => navigation.navigate('Search', {title: 'Buscar'})}>
           <View style={styles.categoryIcon}>
             <MaterialCommunityIcons
               name="food-fork-drink"

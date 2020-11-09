@@ -18,10 +18,25 @@ import {View} from 'react-native-animatable';
 import {TouchableOpacity} from 'react-native-gesture-handler';
 import CardListScreen from './CardListScreen';
 import CardItemDetails from './CardItemDetails';
+import ResultsShowScreen from './ResultsShowScreen';
+import SearchScreen from './SearchScreen';
+import {createAppContainer} from 'react-navigation';
 
 const HomeStack = createStackNavigator();
 const NotificationStack = createStackNavigator();
 const ProfileStack = createStackNavigator();
+/*const navigator = createStackNavigator(
+    {
+        Search: SearchScreen,
+        ResultsShow: ResultsShowScreen
+    },
+    {
+        initialRouteName: "Search",
+        defaultNavigationOptions: {
+            title: "Food Search"
+        }
+    }
+);*/
 
 const Tab = createMaterialBottomTabNavigator();
 
@@ -141,6 +156,8 @@ const HomeStackScreen = ({navigation}) => {
           headerBackTitleVisible: false,
         })}
       />
+      <HomeStack.Screen name="Search" component={SearchScreen} />
+      <HomeStack.Screen name="ResultsShow" component={ResultsShowScreen} />
       <HomeStack.Screen
         name="CardItemDetails"
         component={CardItemDetails}
